@@ -1,0 +1,139 @@
+/* .pri {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+} */
+
+.body,
+.bodyInicio {
+    width: 100% !important;
+    height: 100vh !important;
+    background: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.bodyInicio {
+    justify-content: center;
+}
+
+.bodyInicio .btn {
+    font-size: 80px;
+}
+
+.body .container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .foto {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img {
+    width: 130px;
+    height: auto;
+}
+
+.container .nombre {
+    width: 100%;
+    height: 30%;
+    color: white;
+    text-align: center;
+}
+
+.container .lista {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .opciones {
+    position: absolute;
+    width: 20% !important;
+    height: 10vh;
+    top: 2% !important;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opciones a {
+    height: 38px;
+    width: 38px;
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 2%;
+    opacity: .5;
+}
+
+.opciones .icono {
+    width: 16px;
+    height: 16px;
+}
+
+.opciones .gender {
+    top: 60%;
+    left: 15%;
+    position: absolute;
+    color: white;
+}
+
+.opciones .region {
+    top: 60%;
+    left: 57%;
+    position: absolute;
+    color: white;
+}
+
+.opciones .iconoGif {
+    width: 20px;
+    height: 20px;
+}
+
+.opciones .gif {
+    left: 10%;
+}
+
+.lista ul {
+    background: rgb(55, 55, 55);
+    padding: 9.2px;
+    width: 25%;
+}
+
+.lista li {
+    list-style: none;
+    color: white;
+}
+
+.activo {
+    opacity: 1 !important;
+}
+
+.apagado {
+    opacity: .5 !important;
+}
+
+.Input {
+    border: 0;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0);
+}

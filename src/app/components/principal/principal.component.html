@@ -1,0 +1,53 @@
+<!-- <button type="button" id="espacio" class="btn btn-outline-primary" (click)="prueba()" *ngIf="ocultar">Nombres Aleatorio</button> -->
+
+<div class="pri">
+    <section class="bodyInicio">
+        <button type="button" id="espacio" class="btn btn-outline-primary" (click)="prueba()" *ngIf="!ocultar">Nombres Aleatorio</button>
+
+        <section class="body" *ngIf="ocultar" [ngStyle]="{'background': color}">
+            <input type="text" class="Input" id="elInput" (keypress)="ObtenerDatos()" autofocus>
+            <div class="opciones">
+
+
+                <a role="button" (click)="CambiarValor('A')" [ngClass]="{'activo': ActivoA, 'apagado':!ActivoA}"><img class="icono" src="../../../assets/images/random.png" alt=""></a>
+
+
+                <a role="button" (click)="CambiarValor('F')" [ngClass]="{'activo': ActivoF, 'apagado':!ActivoF}"><img class="icono" src="../../../assets/images/female.png" alt=""></a>
+
+
+                <a role="button" (click)="CambiarValor('M')" [ngClass]="{'activo':ActivoM, 'apagado':!ActivoM}"><img class="icono" src="../../../assets/images/male.png" alt=""></a>
+
+
+                <div class="gender">
+                    <h6>GENDER</h6>
+                </div>
+                <a role="button" class="gif"><img class="iconoGif" src="../../../assets/images/flag-random.gif" alt=""></a>
+                <div class="region">
+                    <h6>REGION</h6>
+                </div>
+            </div>
+            <div class="container">
+                <div class="foto">
+                    <img class="rounded-circle mt-1" [src]="datos.photo" alt="">
+                </div>
+                <div class="nombre">
+                    <h1>{{datos.name}} {{datos.surname}}</h1>
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>👤 {{datos.gender}} </li>
+                        <li>🌐 {{datos.region}}</li>
+                        <li>📞 {{datos.phone}}</li>
+                        <li>🎂 {{datos.birthday.dmy}}</li>
+                        <li>✉️ {{datos.email}}</li>
+                        <li>🔑 {{datos.password}}</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+</div>
